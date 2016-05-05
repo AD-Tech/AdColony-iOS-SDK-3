@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>AdColony Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AdColony-iOS-SDK-3 </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">AdColony</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/configureWithAppID:zoneIDs:options:completion:">+ configureWithAppID:zoneIDs:options:completion:</option>
+		
+		<option value="//api/name/getAdvertisingID">+ getAdvertisingID</option>
+		
+		<option value="//api/name/getAppOptions">+ getAppOptions</option>
+		
+		<option value="//api/name/getCustomID">+ getCustomID</option>
+		
+		<option value="//api/name/getSDKVersion">+ getSDKVersion</option>
+		
+		<option value="//api/name/registerHandler:forCustomMessagesOfType:">+ registerHandler:forCustomMessagesOfType:</option>
+		
+		<option value="//api/name/requestInterstitialInZone:options:success:failure:">+ requestInterstitialInZone:options:success:failure:</option>
+		
+		<option value="//api/name/sendCustomMessageOfType:withContent:">+ sendCustomMessageOfType:withContent:</option>
+		
+		<option value="//api/name/setAppOptions:">+ setAppOptions:</option>
+		
+		<option value="//api/name/unregisterHandlerForCustomMessagesOfType:">+ unregisterHandlerForCustomMessagesOfType:</option>
+		
+		<option value="//api/name/zoneForID:">+ zoneForID:</option>
+		
+	</optgroup>
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">AdColony Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>AdColony.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The AdColony interface constists of a set of static methods for interacting with the SDK.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						<a title="Starting AdColony" name="task_Starting AdColony"></a>
+						<h2 class="task-title">Starting AdColony</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/configureWithAppID:zoneIDs:options:completion:" title="configureWithAppID:zoneIDs:options:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/configureWithAppID:zoneIDs:options:completion:">+&nbsp;configureWithAppID:zoneIDs:options:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configures AdColony specifically for your app; required for usage of the rest of the API.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)configureWithAppID:(NSString *)<em>appID</em> zoneIDs:(NSArray&lt;NSString*&gt; *)<em>zoneIDs</em> options:(nullable AdColonyAppOptions *)<em>options</em> completion:(nullable void ( ^ ) ( NSArray&lt;AdColonyZone*&gt; *zones ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>appID</code></th>
+						<td><p>The AdColony app ID for your app.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>zoneIDs</code></th>
+						<td><p>An array of at least one AdColony zone ID string.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>options</code></th>
+						<td><p>(optional) Configuration options for your app.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>(optional) A block of code to be executed upon completion of the configuration operation. Dispatched on main thread.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method returns immediately; any long-running work such as network connections are performed in the background.
+AdColony does not begin preparing ads for display or performing reporting until after it is configured by your app.
+The required appID and zoneIDs parameters for this method can be created and retrieved at the <a href="http://clients.adcolony.com">Control Panel</a>.
+If either of these are <code>nil</code>, app will be unable to play ads and AdColony will only provide limited reporting and install tracking functionality.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AdColonyAppOptions.html">AdColonyAppOptions</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/AdColonyZone.html">AdColonyZone</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AdColony.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Requesting Ads" name="task_Requesting Ads"></a>
+						<h2 class="task-title">Requesting Ads</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/requestInterstitialInZone:options:success:failure:" title="requestInterstitialInZone:options:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestInterstitialInZone:options:success:failure:">+&nbsp;requestInterstitialInZone:options:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests an <a href="../Classes/AdColonyInterstitial.html">AdColonyInterstitial</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)requestInterstitialInZone:(NSString *)<em>zoneID</em> options:(nullable AdColonyAdOptions *)<em>options</em> success:(void ( ^ ) ( AdColonyInterstitial *ad ))<em>success</em> failure:(nullable void ( ^ ) ( AdColonyAdRequestError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>options</code></th>
+						<td><p>Pass <code>nil</code> to this parameter. In place for future evolution of this API.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block of code to be executed if the ad request succeeds.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>(optional) A block of code to be executed if the ad request does not succeed.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>zone</code></th>
+						<td><p>The AdColony zone identifier string indicating which zone the ad request is for.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method returns immediately, before the ad request completes.
+If the request is successful, an <a href="../Classes/AdColonyInterstitial.html">AdColonyInterstitial</a> object will be passed to the success block.
+If the request is unsuccessful, the failure block will be called.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AdColonyAdOptions.html">AdColonyAdOptions</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/AdColonyInterstitial.html">AdColonyInterstitial</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/AdColonyAdRequestError.html">AdColonyAdRequestError</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AdColony.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Zone Retrieval" name="task_Zone Retrieval"></a>
+						<h2 class="task-title">Zone Retrieval</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/zoneForID:" title="zoneForID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/zoneForID:">+&nbsp;zoneForID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Retrieves an <a href="../Classes/AdColonyZone.html">AdColonyZone</a> object.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (nullable AdColonyZone *)zoneForID:(NSString *)<em>zoneID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>ID</code></th>
+						<td><p>The AdColony zone identifier string indicating which zone to return.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An <a href="../Classes/AdColonyZone.html">AdColonyZone</a> object. Returns <code>nil</code> if an invalid zone ID is passed.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><a href="../Classes/AdColonyZone.html">AdColonyZone</a> objects aggregate informative data about unique AdColony zones such as their identifiers, whether or not they are configured for rewards, etc.
+AdColony zone IDs can be created and retrieved at the <a href="http://clients.adcolony.com">Control Panel</a>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AdColonyZone.html">AdColonyZone</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AdColony.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Device Identifiers" name="task_Device Identifiers"></a>
+						<h2 class="task-title">Device Identifiers</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getAdvertisingID" title="getAdvertisingID"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getAdvertisingID">+&nbsp;getAdvertisingID</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Retrieves the device&rsquo;s current advertising identifier.
+The identifier is an alphanumeric string unique to each device, used by systems to facilitate ad serving.
+Note that this method can be called before <code>configureWithAppID:options:completion</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)getAdvertisingID</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The device&rsquo;s current advertising identifier.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AdColony.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getCustomID" title="getCustomID"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getCustomID">+&nbsp;getCustomID</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Retrieves the device&rsquo;s current custom identifier.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)getCustomID</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The device&rsquo;s current custom identifier.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This is an arbitrary, application-specific identifier string for the current user.
+To configure this identifier, use the <code>setOption:withValue</code> method of the <a href="../Classes/AdColonyAppOptions.html">AdColonyAppOptions</a> object you pass to <code>configureWithAppID:options:completion</code>.
+Note that if this method is called before <code>configureWithAppID:options:completion</code>, it will return an empty string.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AdColony.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="App Options" name="task_App Options"></a>
+						<h2 class="task-title">App Options</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/setAppOptions:" title="setAppOptions:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setAppOptions:">+&nbsp;setAppOptions:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the current, global set of <a href="../Classes/AdColonyAppOptions.html">AdColonyAppOptions</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)setAppOptions:(AdColonyAppOptions *)<em>options</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>options</code></th>
+						<td><p>The <a href="../Classes/AdColonyAppOptions.html">AdColonyAppOptions</a> object to be used for configuring global options such as a custom user identifier.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Note that you must instantiate the options object with at least one AdColony zone identifier string.
+Call the object&rsquo;s <code>setOption:withValue</code> method to configure other, currently-supported options.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AdColony.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getAppOptions" title="getAppOptions"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getAppOptions">+&nbsp;getAppOptions</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the current, global set of <a href="../Classes/AdColonyAppOptions.html">AdColonyAppOptions</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (nullable AdColonyAppOptions *)getAppOptions</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The current <a href="../Classes/AdColonyAppOptions.html">AdColonyAppOptions</a> object being used by the SDK.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Call this method to obtain the current set of app options used to configure SDK behavior.
+If no options object has been set, this method will return <code>nil</code>.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AdColonyAppOptions.html">AdColonyAppOptions</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AdColony.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Custom Messages" name="task_Custom Messages"></a>
+						<h2 class="task-title">Custom Messages</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/sendCustomMessageOfType:withContent:" title="sendCustomMessageOfType:withContent:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendCustomMessageOfType:withContent:">+&nbsp;sendCustomMessageOfType:withContent:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sends a custom message to the AdColony SDK.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)sendCustomMessageOfType:(NSString *)<em>type</em> withContent:(nullable NSString *)<em>content</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>The type of the custom message. Must be 128 characters or less.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>content</code></th>
+						<td><p>The content of the custom message. Must be 128 characters or less.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AdColony.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/registerHandler:forCustomMessagesOfType:" title="registerHandler:forCustomMessagesOfType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registerHandler:forCustomMessagesOfType:">+&nbsp;registerHandler:forCustomMessagesOfType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Registers a block of code to be executed when the AdColony SDK sends your app a custom message.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)registerHandler:(void ( ^ ) ( NSString *content ))<em>handler</em> forCustomMessagesOfType:(NSString *)<em>type</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>handler</code></th>
+						<td><p>The block of code to be executed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AdColony.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/unregisterHandlerForCustomMessagesOfType:" title="unregisterHandlerForCustomMessagesOfType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unregisterHandlerForCustomMessagesOfType:">+&nbsp;unregisterHandlerForCustomMessagesOfType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Unregisters the block-based handler associated with the custom message type.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)unregisterHandlerForCustomMessagesOfType:(NSString *)<em>type</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>The custom message type. Must be 128 chars or less.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AdColony.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="SDK Version" name="task_SDK Version"></a>
+						<h2 class="task-title">SDK Version</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getSDKVersion" title="getSDKVersion"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getSDKVersion">+&nbsp;getSDKVersion</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Use this method to retrieve a string-based representation of the SDK version.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)getSDKVersion</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The current AdColony SDK version string.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AdColony.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 AdColony. All rights reserved. Updated: 2016-05-04</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
