@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F3565B37-708A-45D2-87F1-F255C3EB7878</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AdColonyBasic</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5360545CAEB1B944C311AFE7753ECF3D6092C618</key>
+		<string>jirbo.git.beanstalkapp.com:/jirbo/adcolony-ios-2.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SampleApps/ObjC/AdColonyBasic/AdColonyBasic.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5360545CAEB1B944C311AFE7753ECF3D6092C618</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>jirbo.git.beanstalkapp.com:/jirbo/adcolony-ios-2.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5360545CAEB1B944C311AFE7753ECF3D6092C618</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5360545CAEB1B944C311AFE7753ECF3D6092C618</string>
+			<key>IDESourceControlWCCName</key>
+			<string>adcolony-ios-2</string>
+		</dict>
+	</array>
+</dict>
+</plist>

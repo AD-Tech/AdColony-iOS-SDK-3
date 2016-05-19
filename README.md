@@ -3,14 +3,31 @@ AdColony iOS SDK
 Modified: April 28, 2016  
 SDK Version: 3.0.1.0
 
+Download:
+----------------------------------
+The simplest way to obtain the AdColony iOS SDK is to click the "Clone or download" button located on the upper, right-hand side of the Github repository page.
+
+Contains:
+----------------------------------
+* AdColony.framework (iOS)
+* Sample Apps
+  * AdColonyBasic
+  * AdColonyV4VC
+* W-9 Form.pdf
+
 Getting Started with AdColony:
 ----------------------------------
 First time and returning users should review the [documentation](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki).
 
-Download:
+3.0.1 Change Log:
 ----------------------------------
-The 3.0 AdColony iOS SDK will be available on May 18th. Please check back after that date to begin integration.
-
+* Increased required Xcode version to 7.0
+* Asynchronous API for making ad requests
+* Delegate protocols replaced with block-based handlers
+* Replaced usage of NSURLConnection with NSURLSession
+* Optimized ad-server communication protocols
+* Video-playing APIs now take a reference to presenting view controller
+* New APIs for option-setting and configuring user metadata
 
 Legal Requirements:
 ----------------------------------
