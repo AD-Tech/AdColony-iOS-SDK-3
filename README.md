@@ -23,7 +23,7 @@ First time and returning users should review the [documentation](https://github.
 
 3.0.2 Change Log:
 ----------------------------------
-* Compass
+* Compass™
 * Native Ad Unit (InstantFeed™) 
 * In-app Purchase Promo (IAPP) ads
 * Custom Messaging
