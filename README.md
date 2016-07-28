@@ -17,14 +17,17 @@ Contains:
 
 Getting Started with AdColony:
 ----------------------------------
+Thanks for joining AdColony on the next step in mobile monetization. We're committed to giving our partners the tools to grow, engage, and monetize successfully. Our Aurora SDK contains huge leaps forward in our capabilities, with benefits for both publishers and advertisers. We would also like to highlight the addition of AdColony Compass™ to our suite of products. AdColony Compass™ provides publishers with intuitive marketing tools to maximize the value of users throughout your app economy, like creating rewards, achievements, push notifications and in-app messaging. For more details on how you can take advantage of the Compass platform, please [click here.](https://clients.adcolony.com/compass/info)
+
 First time and returning users should review the [documentation](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki).
 
 3.0.2 Change Log:
 ----------------------------------
-* Native Ad Unit
+* Compass
+* Native Ad Unit (InstantFeed™) 
 * In-app Purchase Promo (IAPP) ads
 * Custom Messaging
-* Instant Feed demo app
+* InstantFeed™ demo app
 * Swift-based sample apps
 * Misc bugfixes
 
