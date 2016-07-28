@@ -1,38 +1,29 @@
-/**
- *  AdColonyOptions.h
- *  AdColonyOptions
- *
- *  Created by Owain Moss on 4/7/16.
- */
-
+#import "AdColonyUserMetadata.h"
 #import <Foundation/Foundation.h>
-
-@class AdColonyUserMetadata;
 
 NS_ASSUME_NONNULL_BEGIN
 
 /**
  AdColonyOptions is a superclass for all types of AdColonyOptions. 
  Note that AdColonyOptions classes should never be instantiated directly.
- Instead, create one of the subclasses and set options on it using the string-based constants defined in its header file.
+ Instead, create one of the subclasses and set options on it using its properties string-based constants defined in its header file.
  */
 @interface AdColonyOptions : NSObject
 
 /** @name Properties */
 
 /**
- @abstract An AdColonyUserMetadata object.
+ @abstract Represents an AdColonyUserMetadata object.
  @discussion Configure and set this property to improve ad targeting.
- @param userMetadata The AdColonyUserMetadata object.
  @see AdColonyUserMetadata
  */
-@property (nonatomic) AdColonyUserMetadata* userMetadata;
+@property (nonatomic, strong, nullable) AdColonyUserMetadata *userMetadata;
 
 /** @name Setting Options */
 
 /**
- @abstract Sets a supported option using one of the option key constants.
- @discussion Note that only NSString and NSNumber option values are supported at this time.
+ @abstract Sets a supported option.
+ @discussion Use this method to set a string-based option with an arbitrary, string-based value.
  @param option An NSString representing the option.
  @param value An NSString used to configure the option. Strings must be 128 characters or less.
  @return A BOOL indicating whether or not the option was set successfully.
@@ -42,8 +33,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)setOption:(NSString *)option withStringValue:(NSString *)value;
 
 /**
- @abstract Sets a supported option using one of the option key constants.
- @discussion Note that only NSString and NSNumber option values are supported at this time.
+ @abstract Sets a supported option.
+ @discussion Use this method to set a string-based option with an arbitrary, numerial value.
  @param option An NSString representing the option.
  @param value An NSNumber used to configure the option. Strings must be 128 characters or less.
  @return A BOOL indicating whether or not the option was set successfully.
@@ -57,9 +48,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  @abstract Returns the string-based option associated with the given key.
- @discussion Call this method using one of the string-based metadata keys in your subclass to get the corresponding value.
+ @discussion Call this method to obtain the string-based value associated with the given string-based key.
  @param key A string-based option key.
- @return The option value associated with the given key. Returns `nil` if the option has not been set.
+ @return The string-based value associated with the given key. Returns `nil` if the option has not been set.
  @see AdColonyAppOptions
  @see AdColonyAdOptions
  */
@@ -67,7 +58,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  @abstract Returns the numerical option associated with the given key.
- @discussion Call this method using one of the string-based metadata keys in your subclass to get the corresponding value.
+ @discussion Call this method to obtain the numerical value associated with the given string-based key.
  @param key A string-based option key.
  @return The option value associated with the given key. Returns `nil` if the option has not been set.
  @see AdColonyAppOptions

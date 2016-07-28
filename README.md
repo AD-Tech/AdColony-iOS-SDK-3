@@ -1,7 +1,7 @@
 AdColony iOS SDK
 ==================================
-Modified: April 28, 2016  
-SDK Version: 3.0.1.0
+Modified: July 28, 2016  
+SDK Version: 3.0.2.5
 
 Download:
 ----------------------------------
@@ -10,14 +10,23 @@ The simplest way to obtain the AdColony iOS SDK is to click the "Clone or downlo
 Contains:
 ----------------------------------
 * AdColony.framework (iOS)
-* Sample Apps
+* Sample Apps (Swift and ObjC)
   * AdColonyBasic
   * AdColonyV4VC
-* W-9 Form.pdf
+  * AdColonyInstantFeed
 
 Getting Started with AdColony:
 ----------------------------------
 First time and returning users should review the [documentation](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki).
+
+3.0.2 Change Log:
+----------------------------------
+* Native Ad Unit
+* In-app Purchase Promo (IAPP) ads
+* Custom Messaging
+* Instant Feed demo app
+* Swift-based sample apps
+* Misc bugfixes
 
 3.0.1 Change Log:
 ----------------------------------

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeedCellImage" rowHeight="100" id="KGk-i7-Jjw" customClass="FeedCellImage">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pnc-ny-W61">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                        </accessibility>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pnc-ny-W61" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="A6t-5h-dkx"/>
+                    <constraint firstAttribute="bottom" secondItem="pnc-ny-W61" secondAttribute="bottom" id="X7a-dP-amF"/>
+                    <constraint firstItem="pnc-ny-W61" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="wjE-hy-m0I"/>
+                    <constraint firstAttribute="trailing" secondItem="pnc-ny-W61" secondAttribute="trailing" id="yxJ-tI-0VM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="background" destination="pnc-ny-W61" id="xCW-rm-FUc"/>
+            </connections>
+            <point key="canvasLocation" x="-879" y="-337"/>
+        </tableViewCell>
+    </objects>
+</document>

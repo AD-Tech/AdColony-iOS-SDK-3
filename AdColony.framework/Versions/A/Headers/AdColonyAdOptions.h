@@ -1,34 +1,29 @@
-/**
- *  AdColonyAdOptions.h
- *  AdColonyAdOptions
- *
- *  Created by Owain Moss on 4/7/16.
- */
-
 #import "AdColonyOptions.h"
-
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 /**
- AdColonyAdOptions objects are used to set configurable aspects of an ad request, such as third-party network settings, user metadata, etc.
+ AdColonyAdOptions objects are used to set configurable aspects of an ad session, such as third-party network settings, user metadata, etc.
+ Set the properties below to configure a pre-defined ad option. Note that you can also set arbitrary options using the AdColonyOptions API.
  */
 @interface AdColonyAdOptions : AdColonyOptions
+
+/** @name Properties */
+
+/**
+ @abstract Enables reward dialogs to be shown before an advertisement.
+ @discussion These popups are disabled by default.
+ Set this property before calling `configureWithAppID:zoneIDs:options:completion:` with a corresponding value of `YES` to enable.
+ */
+@property (nonatomic) BOOL showPrePopup;
+
+/**
+ @abstract Enables reward dialogs to be shown after an advertisement.
+ @discussion These popups are disabled by default.
+ Set this property before calling `configureWithAppID:zoneIDs:options:completion:` with a corresponding value of `YES` to enable.
+ */
+@property (nonatomic) BOOL showPostPopup;
 @end
-
-#pragma mark - AdColony Ad Option Keys
-
-/**
- Enable a reward dialog to be displayed immediately before rewarded interstitials begin playback.
- Use a corresponding value of `@(YES)` to enable.
- */
-FOUNDATION_EXPORT NSString* const ADC_OPTION_PRE_POPUP;
-
-/**
- Enable a reward dialog to be displayed immediately after rewarded interstitials finish playback.
- Use a corresponding value of `@(YES)` to enable.
- */
-FOUNDATION_EXPORT NSString* const ADC_OPTION_POST_POPUP;
 
 NS_ASSUME_NONNULL_END

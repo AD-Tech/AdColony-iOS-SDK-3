@@ -1,25 +1,18 @@
-/**
- *  AdColonyZone.h
- *  AdColonyZone
- *
- *  Created by Owain Moss on 3/10/15.
- */
-
 #import <Foundation/Foundation.h>
 
 /**
  * Zone types
  */
-typedef NS_ENUM(NSUInteger, ADCOLONY_ZONE_TYPE) {
+typedef NS_ENUM(NSUInteger, AdColonyZoneType) {
     
     /** Interstitial zone type */
-    ADCOLONY_ZONE_TYPE_INTERSTITIAL = 0,
+    AdColonyZoneTypeInterstitial = 0,
     
     /** Banner zone type */
-    ADCOLONY_ZONE_TYPE_BANNER,
+    AdColonyZoneTypeBanner,
     
     /** Native zone type */
-    ADCOLONY_ZONE_TYPE_NATIVE
+    AdColonyZoneTypeNative
 };
 
 NS_ASSUME_NONNULL_BEGIN
@@ -31,27 +24,24 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface AdColonyZone : NSObject
 
-/** @name Standard Zone Properties */
+/** @name Zone */
 
 /**
- @abstract The given zone's unique string identifier.
+ @abstract Represents the given zone's unique string identifier.
  @discussion AdColony zone IDs can be created at the [Control Panel](http://clients.adcolony.com).
- @param identifier A globally unique NSString identifying the zone.
  */
 @property (nonatomic, readonly) NSString *identifier;
 
 /**
- @abstract The zone type - interstitial, banner, or native.
+ @abstract Represents the zone type - interstitial, banner, or native.
  @discussion You can set the type for your zones at the [Control Panel](http://clients.adcolony.com).
- @param identifier An ADCOLONY_ZONE_TYPE indicating what type of ads the given zone supports.
- @see ADCOLONY_ZONE_TYPE
+ @see AdColonyZoneType
  */
-@property (nonatomic, readonly) ADCOLONY_ZONE_TYPE type;
+@property (nonatomic, readonly) AdColonyZoneType type;
 
 /**
- @abstract Flag indicating whether or not the zone is enabled.
- @discussion Sending invalid zone id strings to `[AdColony configureWithAppID:zoneIDs:options:completion:]` will cause this value to be `NO`.
- @param enabled Whether or not the zone was configured with a valid zone id.
+ @abstract Indicates whether or not the zone is enabled.
+ @discussion Sending invalid zone id strings to `configureWithAppID:zoneIDs:options:completion:` will cause this value to be `NO`.
  */
 @property (nonatomic, readonly) BOOL enabled;
 
@@ -59,38 +49,33 @@ NS_ASSUME_NONNULL_BEGIN
 /** @name Rewards */
 
 /**
- @abstract Flag indicating whether or not the zone is configured for rewards.
+ @abstract Indicates whether or not the zone is configured for rewards.
  @discussion You can configure rewards in your zones at the [Control Panel](http://clients.adcolony.com).
- Sending invalid zone id strings to `[AdColony configureWithAppID:zoneIDs:options:completion:]` will cause this value to be `NO`.
- @param rewarded Whether or not the zone id configured for rewards.
+ Sending invalid zone id strings to `configureWithAppID:zoneIDs:options:completion:` will cause this value to be `NO`.
  */
 @property (nonatomic, readonly) BOOL rewarded;
 
 /**
- @abstract The number of completed ad views required to receive a reward for the given zone.
+ @abstract Represents the number of completed ad views required to receive a reward for the given zone.
  @discussion This value will be 0 if the given zone is not configured for rewards.
- @param viewsPerReward An NSUInteger denoting the number of ad views required to receive a reward.
  */
 @property (nonatomic, readonly) NSUInteger viewsPerReward;
 
 /**
- @abstract The number of ads that must be watched before a reward is given.
+ @abstract Represents the number of ads that must be watched before a reward is given.
  @discussion This value will be 0 if the given zone is not configured for rewards.
- @param viewsUntilReward An NSUInteger denoting the number of ads that must be watched before a reward is given.
  */
 @property (nonatomic, readonly) NSUInteger viewsUntilReward;
 
 /**
- @abstract The reward amount for each completed rewarded ad view.
+ @abstract Represents the reward amount for each completed rewarded ad view.
  @discussion This value will be 0 if the given zone is not configured for rewards.
- @param rewardAmount An NSUInteger denoting the reward amount for each rewarded ad.
  */
 @property (nonatomic, readonly) NSUInteger rewardAmount;
 
 /**
- @abstract The singular form of the reward name based on the reward amount.
+ @abstract Represents the singular form of the reward name based on the reward amount.
  @discussion This value will be an empty string if the given zone is not configured for rewards.
- @param rewardName An NSString representing the singular form of the reward name based on the reward amount.
  */
 @property (nonatomic, readonly) NSString *rewardName;
 
@@ -102,9 +87,8 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Based on the success parameter, client-side reward implementations should consider incrementing the user's currency balance in this method.
  Server-side reward implementations, however, should consider the success parameter and then contact the game server to determine the current total balance for the virtual currency.
  Note that the associated block of code will be dispatched on the main thread.
- @param reward The block of code to be executed after a rewarded ad has been shown.
  */
--(void)setReward:(nullable void (^)(BOOL success, NSString* name, int amount))reward;
+-(void)setReward:(nullable void (^)(BOOL success, NSString *name, int amount))reward;
 @end
 
 NS_ASSUME_NONNULL_END

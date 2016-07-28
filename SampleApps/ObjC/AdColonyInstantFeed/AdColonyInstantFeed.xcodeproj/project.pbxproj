@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1733598A1B1CCFC20001CD3D /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 173359891B1CCFC20001CD3D /* AdColony.framework */; };
+		9F0059EA1A82D78100F06957 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0059E91A82D78100F06957 /* main.m */; };
+		9F0059ED1A82D78100F06957 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0059EC1A82D78100F06957 /* AppDelegate.m */; };
+		9F0059F01A82D78100F06957 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0059EF1A82D78100F06957 /* ViewController.m */; };
+		9F0059F31A82D78100F06957 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F0059F11A82D78100F06957 /* Main.storyboard */; };
+		9F0059F51A82D78100F06957 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F0059F41A82D78100F06957 /* Images.xcassets */; };
+		9F005A1E1A82D82700F06957 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F005A0E1A82D82700F06957 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9F005A1F1A82D82700F06957 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F005A0F1A82D82700F06957 /* AudioToolbox.framework */; };
+		9F005A201A82D82700F06957 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F005A101A82D82700F06957 /* AVFoundation.framework */; };
+		9F005A211A82D82700F06957 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F005A111A82D82700F06957 /* CoreGraphics.framework */; };
+		9F005A221A82D82700F06957 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F005A121A82D82700F06957 /* CoreMedia.framework */; };
+		9F005A231A82D82700F06957 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F005A131A82D82700F06957 /* CoreTelephony.framework */; };
+		9F005A241A82D82700F06957 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F005A141A82D82700F06957 /* EventKit.framework */; };
+		9F005A251A82D82700F06957 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F005A151A82D82700F06957 /* EventKitUI.framework */; };
+		9F005A271A82D82700F06957 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F005A171A82D82700F06957 /* MediaPlayer.framework */; };
+		9F005A281A82D82700F06957 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F005A181A82D82700F06957 /* MessageUI.framework */; };
+		9F005A291A82D82700F06957 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F005A191A82D82700F06957 /* QuartzCore.framework */; };
+		9F005A2A1A82D82700F06957 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F005A1A1A82D82700F06957 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9F005A2B1A82D82700F06957 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F005A1B1A82D82700F06957 /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9F005A2C1A82D82700F06957 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F005A1C1A82D82700F06957 /* SystemConfiguration.framework */; };
+		9F005A2D1A82D82700F06957 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F005A1D1A82D82700F06957 /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9F005A3C1A82E36000F06957 /* FeedCellImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F005A3A1A82E36000F06957 /* FeedCellImage.m */; };
+		9F005A3D1A82E36000F06957 /* FeedCellImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F005A3B1A82E36000F06957 /* FeedCellImage.xib */; };
+		9F005A411A82E8BC00F06957 /* FeedCellAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F005A3F1A82E8BB00F06957 /* FeedCellAd.m */; };
+		9F005A421A82E8BC00F06957 /* FeedCellAd.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F005A401A82E8BB00F06957 /* FeedCellAd.xib */; };
+		9F04536A1B1642240016DE3B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F0453691B1642240016DE3B /* LaunchScreen.xib */; };
+		9F91AA701B8532E80084AEFB /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F91AA6F1B8532E80084AEFB /* libz.1.2.5.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		173359891B1CCFC20001CD3D /* AdColony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdColony.framework; path = ../../../../AdColony.framework; sourceTree = "<group>"; };
+		9F0059E41A82D78100F06957 /* AdColonyInstantFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdColonyInstantFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F0059E81A82D78100F06957 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F0059E91A82D78100F06957 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9F0059EB1A82D78100F06957 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9F0059EC1A82D78100F06957 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9F0059EE1A82D78100F06957 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9F0059EF1A82D78100F06957 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9F0059F21A82D78100F06957 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9F0059F41A82D78100F06957 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9F005A0E1A82D82700F06957 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		9F005A0F1A82D82700F06957 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9F005A101A82D82700F06957 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9F005A111A82D82700F06957 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9F005A121A82D82700F06957 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		9F005A131A82D82700F06957 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		9F005A141A82D82700F06957 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		9F005A151A82D82700F06957 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		9F005A171A82D82700F06957 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		9F005A181A82D82700F06957 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		9F005A191A82D82700F06957 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9F005A1A1A82D82700F06957 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		9F005A1B1A82D82700F06957 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		9F005A1C1A82D82700F06957 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9F005A1D1A82D82700F06957 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		9F005A391A82E36000F06957 /* FeedCellImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedCellImage.h; sourceTree = "<group>"; };
+		9F005A3A1A82E36000F06957 /* FeedCellImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedCellImage.m; sourceTree = "<group>"; };
+		9F005A3B1A82E36000F06957 /* FeedCellImage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedCellImage.xib; sourceTree = "<group>"; };
+		9F005A3E1A82E8BB00F06957 /* FeedCellAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedCellAd.h; sourceTree = "<group>"; };
+		9F005A3F1A82E8BB00F06957 /* FeedCellAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedCellAd.m; sourceTree = "<group>"; };
+		9F005A401A82E8BB00F06957 /* FeedCellAd.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedCellAd.xib; sourceTree = "<group>"; };
+		9F0453691B1642240016DE3B /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		9F91AA6F1B8532E80084AEFB /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F0059E11A82D78100F06957 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F91AA701B8532E80084AEFB /* libz.1.2.5.tbd in Frameworks */,
+				9F005A1E1A82D82700F06957 /* AdSupport.framework in Frameworks */,
+				9F005A1F1A82D82700F06957 /* AudioToolbox.framework in Frameworks */,
+				9F005A201A82D82700F06957 /* AVFoundation.framework in Frameworks */,
+				9F005A211A82D82700F06957 /* CoreGraphics.framework in Frameworks */,
+				9F005A221A82D82700F06957 /* CoreMedia.framework in Frameworks */,
+				1733598A1B1CCFC20001CD3D /* AdColony.framework in Frameworks */,
+				9F005A231A82D82700F06957 /* CoreTelephony.framework in Frameworks */,
+				9F005A241A82D82700F06957 /* EventKit.framework in Frameworks */,
+				9F005A251A82D82700F06957 /* EventKitUI.framework in Frameworks */,
+				9F005A271A82D82700F06957 /* MediaPlayer.framework in Frameworks */,
+				9F005A281A82D82700F06957 /* MessageUI.framework in Frameworks */,
+				9F005A291A82D82700F06957 /* QuartzCore.framework in Frameworks */,
+				9F005A2A1A82D82700F06957 /* Social.framework in Frameworks */,
+				9F005A2B1A82D82700F06957 /* StoreKit.framework in Frameworks */,
+				9F005A2C1A82D82700F06957 /* SystemConfiguration.framework in Frameworks */,
+				9F005A2D1A82D82700F06957 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F0059DB1A82D78100F06957 = {
+			isa = PBXGroup;
+			children = (
+				9F0059E61A82D78100F06957 /* AdColonyInstantFeed */,
+				9F0059E51A82D78100F06957 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9F0059E51A82D78100F06957 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F0059E41A82D78100F06957 /* AdColonyInstantFeed.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F0059E61A82D78100F06957 /* AdColonyInstantFeed */ = {
+			isa = PBXGroup;
+			children = (
+				9F005A331A82DE6C00F06957 /* FeedCells */,
+				9F0059EB1A82D78100F06957 /* AppDelegate.h */,
+				9F0059EC1A82D78100F06957 /* AppDelegate.m */,
+				9F0059EE1A82D78100F06957 /* ViewController.h */,
+				9F0059EF1A82D78100F06957 /* ViewController.m */,
+				9F0059F11A82D78100F06957 /* Main.storyboard */,
+				9F0453691B1642240016DE3B /* LaunchScreen.xib */,
+				9F0059F41A82D78100F06957 /* Images.xcassets */,
+				9F005A2E1A82D84100F06957 /* Frameworks */,
+				9F0059E71A82D78100F06957 /* Supporting Files */,
+			);
+			path = AdColonyInstantFeed;
+			sourceTree = "<group>";
+		};
+		9F0059E71A82D78100F06957 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F0059E81A82D78100F06957 /* Info.plist */,
+				9F0059E91A82D78100F06957 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9F005A2E1A82D84100F06957 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				173359891B1CCFC20001CD3D /* AdColony.framework */,
+				9F005A0E1A82D82700F06957 /* AdSupport.framework */,
+				9F005A0F1A82D82700F06957 /* AudioToolbox.framework */,
+				9F005A101A82D82700F06957 /* AVFoundation.framework */,
+				9F005A111A82D82700F06957 /* CoreGraphics.framework */,
+				9F005A121A82D82700F06957 /* CoreMedia.framework */,
+				9F005A131A82D82700F06957 /* CoreTelephony.framework */,
+				9F005A141A82D82700F06957 /* EventKit.framework */,
+				9F005A151A82D82700F06957 /* EventKitUI.framework */,
+				9F91AA6F1B8532E80084AEFB /* libz.1.2.5.tbd */,
+				9F005A171A82D82700F06957 /* MediaPlayer.framework */,
+				9F005A181A82D82700F06957 /* MessageUI.framework */,
+				9F005A191A82D82700F06957 /* QuartzCore.framework */,
+				9F005A1A1A82D82700F06957 /* Social.framework */,
+				9F005A1B1A82D82700F06957 /* StoreKit.framework */,
+				9F005A1C1A82D82700F06957 /* SystemConfiguration.framework */,
+				9F005A1D1A82D82700F06957 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F005A331A82DE6C00F06957 /* FeedCells */ = {
+			isa = PBXGroup;
+			children = (
+				9F005A391A82E36000F06957 /* FeedCellImage.h */,
+				9F005A3A1A82E36000F06957 /* FeedCellImage.m */,
+				9F005A3B1A82E36000F06957 /* FeedCellImage.xib */,
+				9F005A3E1A82E8BB00F06957 /* FeedCellAd.h */,
+				9F005A3F1A82E8BB00F06957 /* FeedCellAd.m */,
+				9F005A401A82E8BB00F06957 /* FeedCellAd.xib */,
+			);
+			name = FeedCells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F0059E31A82D78100F06957 /* AdColonyInstantFeed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F005A071A82D78100F06957 /* Build configuration list for PBXNativeTarget "AdColonyInstantFeed" */;
+			buildPhases = (
+				9F0059E01A82D78100F06957 /* Sources */,
+				9F0059E11A82D78100F06957 /* Frameworks */,
+				9F0059E21A82D78100F06957 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdColonyInstantFeed;
+			productName = AdColonyInstantFeed;
+			productReference = 9F0059E41A82D78100F06957 /* AdColonyInstantFeed.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F0059DC1A82D78100F06957 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = AdColony;
+				TargetAttributes = {
+					9F0059E31A82D78100F06957 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 9F0059DF1A82D78100F06957 /* Build configuration list for PBXProject "AdColonyInstantFeed" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F0059DB1A82D78100F06957;
+			productRefGroup = 9F0059E51A82D78100F06957 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F0059E31A82D78100F06957 /* AdColonyInstantFeed */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F0059E21A82D78100F06957 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F04536A1B1642240016DE3B /* LaunchScreen.xib in Resources */,
+				9F0059F31A82D78100F06957 /* Main.storyboard in Resources */,
+				9F005A421A82E8BC00F06957 /* FeedCellAd.xib in Resources */,
+				9F005A3D1A82E36000F06957 /* FeedCellImage.xib in Resources */,
+				9F0059F51A82D78100F06957 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F0059E01A82D78100F06957 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F0059F01A82D78100F06957 /* ViewController.m in Sources */,
+				9F005A3C1A82E36000F06957 /* FeedCellImage.m in Sources */,
+				9F0059ED1A82D78100F06957 /* AppDelegate.m in Sources */,
+				9F0059EA1A82D78100F06957 /* main.m in Sources */,
+				9F005A411A82E8BC00F06957 /* FeedCellAd.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9F0059F11A82D78100F06957 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F0059F21A82D78100F06957 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F005A051A82D78100F06957 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F005A061A82D78100F06957 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F005A081A82D78100F06957 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../../..",
+				);
+				INFOPLIST_FILE = AdColonyInstantFeed/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adcolony.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F005A091A82D78100F06957 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../../..",
+				);
+				INFOPLIST_FILE = AdColonyInstantFeed/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adcolony.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F0059DF1A82D78100F06957 /* Build configuration list for PBXProject "AdColonyInstantFeed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F005A051A82D78100F06957 /* Debug */,
+				9F005A061A82D78100F06957 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F005A071A82D78100F06957 /* Build configuration list for PBXNativeTarget "AdColonyInstantFeed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F005A081A82D78100F06957 /* Debug */,
+				9F005A091A82D78100F06957 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F0059DC1A82D78100F06957 /* Project object */;
+}

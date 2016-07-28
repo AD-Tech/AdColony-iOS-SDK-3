@@ -1,10 +1,3 @@
-/**
- *  AdColonyUserMetadata.h
- *  AdColonyUserMetadata
- *
- *  Created by Owain Moss on 4/28/16.
- */
-
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -15,13 +8,73 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface AdColonyUserMetadata : NSObject
 
-/** @name Setting Metadata */
+/** @name Pre-defined Aspects of User Metadata */
+
+/**
+ @abstract Configures the user's age.
+ @discussion Set this property to configure the user's age.
+ */
+@property (nonatomic) NSInteger userAge;
+
+/**
+ @abstract Configures the user's interests.
+ @discussion Set this property with an array of NSStrings to configure the user's interests.
+ */
+@property (nonatomic, strong, nullable) NSArray<NSString *> *userInterests;
+
+/**
+ @abstract Configures the user's gender.
+ @discussion Set this property to configure the user's gender.
+ Note that you should use one of the pre-defined constants below to configure this property.
+ */
+@property (nonatomic, strong, nullable) NSString *userGender;
+
+/**
+ @abstract Configures the user's latitude.
+ @discussion Set this property to configure the user's latitude.
+ */
+@property (nonatomic, strong, nullable) NSNumber *userLatitude;
+
+/**
+ @abstract Configures the user's longitude.
+ @discussion Set this property to configure the user's longitude.
+ */
+@property (nonatomic, strong, nullable) NSNumber *userLongitude;
+
+/**
+ @abstract Configures the user's zip code.
+ @discussion Set this property to configure the user's zip code.
+ */
+@property (nonatomic, strong, nullable) NSString *userZipCode;
+
+/**
+ @abstract Configures the user's household income.
+ @discussion Set this property to configure the user's household income.
+ */
+@property (nonatomic, strong, nullable) NSNumber *userHouseholdIncome;
+
+/**
+ @abstract Configures the user's marital status.
+ @discussion Set this property to configure the user's marital status.
+ Note that you should use one of the pre-defined constants below to configure this property.
+ */
+@property (nonatomic, strong, nullable) NSString *userMaritalStatus;
+
+/**
+ @abstract Configures the user's education level.
+ @discussion Set this property to configure the user's education level.
+ Note that you should use one of the pre-defined constants below to configure this property.
+ */
+@property (nonatomic, strong, nullable) NSString *userEducationLevel;
+
+
+/** @name Setting Arbitrary Metadata */
 
 /**
  @abstract Configures the AdColonyUserMetadata object with the given key/value pair.
- @discussion Call this method with one key and one of the pre-defined values below.
- @param key One of the keys defined below.
- @param value One of the pre-defined values below.
+ @discussion Use this method to send arbitrary user metadata.
+ @param key A key to represent the metadata. Must be 128 chars or less.
+ @param value An NSString used to configure the metadata. Must be 128 chars or less.
  @return Whether the option was set successfully.
  */
 - (BOOL)setMetadataWithKey:(NSString *)key andStringValue:(NSString *)value;
@@ -30,8 +83,8 @@ NS_ASSUME_NONNULL_BEGIN
  @abstract Configures the AdColonyUserMetadata object with the given key/value pair.
  @discussion Call this method with one of the keys defined below and pass an NSNumber for the value.
  Use this method for configuring the user's age, household income, and location.
- @param key One of the keys defined below.
- @param value An NSNumber representing the value used to configure the metadata option.
+ @param key A key to represent the metadata.
+ @param value An NSNumber used to configure the metadata option.
  @return Whether the option was set successfully.
  */
 - (BOOL)setMetadataWithKey:(NSString *)key andNumericValue:(NSNumber *)value;
@@ -41,8 +94,8 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion Call this method with one of the keys defined below and pass an NSArray for the value.
  Currently, this method should only be used to configure a set of user interests.
  Note that the array must only contain NSStrings.
- @param key One of the keys defined below.
- @param value An NSNumber representing the value used to configure the metadata option.
+ @param key A key to represent the metadata.
+ @param value An NSArray containing NSStrings used to configure the metadata option. Strings must be 128 chars or less.
  @return Whether the option was set successfully.
  */
 - (BOOL)setMetadataWithKey:(NSString *)key andArrayValue:(NSArray<NSString *> *)value;
@@ -52,101 +105,66 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  @abstract Returns the string value associated with the given key in the metadata object.
- @discussion Call this method using one of the string-based metadata keys below to get the corresponding value.
- @param key One of the keys defined below.
+ @discussion Call this method using the string-based key representing the metadata option to obtain the corresponding sring-based value.
+ @param key The key representing the metadata.
  @return The value associated with the given key. Returns `nil` if the value has not been set.
  */
 - (nullable NSString *)getStringMetadataWithKey:(NSString *)key;
 
 /**
  @abstract Returns the numeric value associated with the given key in the metadata object.
- @discussion Call this method using one of the string-based metadata keys below to get the corresponding numeric value.
- @param key One of the keys defined below.
+ @discussion Call this method using the string-based key representing the metadata option to obtain the corresponding numerical value.
+ @param key The key representing the metadata.
  @return The value associated with the given key. Returns `nil` if the value has not been set.
  */
 - (nullable NSNumber *)getNumericMetadataWithKey:(NSString *)key;
 
 /**
  @abstract Returns the array value associated with the given key in the metadata object.
- @discussion Call this method using one of the string-based metadata keys below to get the corresponding value.
+ @discussion Call this method using the string-based key representing the metadata option to obtain the corresponding array value.
  Currently, this method should only be used to retrive a set of user interests.
- @param key One of the keys defined below.
+ @param key The key representing the metadata.
  @return The value associated with the given key. Returns `nil` if the value has not been set.
  */
 - (nullable NSArray *)getArrayMetadataWithKey:(NSString *)key;
 @end
 
-#pragma mark - User Metadata Keys
-
-/**
- * Use the following keys to configure user metadata options.
- */
-
-/** Set the user's age */
-FOUNDATION_EXPORT NSString *const ADC_SET_USER_AGE;
-
-/** Set the user's interests */
-FOUNDATION_EXPORT NSString *const ADC_SET_USER_INTERESTS;
-
-/** Set the user's gender */
-FOUNDATION_EXPORT NSString *const ADC_SET_USER_GENDER;
-
-/** Set the user's current latitude */
-FOUNDATION_EXPORT NSString *const ADC_SET_USER_LATITUDE;
-
-/** Set the user's current longitude */
-FOUNDATION_EXPORT NSString *const ADC_SET_USER_LONGITUDE;
-
-/** Set the user's annual house hold income in United States Dollars */
-FOUNDATION_EXPORT NSString *const ADC_SET_USER_ANNUAL_HOUSEHOLD_INCOME;
-
-/** Set the user's marital status */
-FOUNDATION_EXPORT NSString *const ADC_SET_USER_MARITAL_STATUS;
-
-/** Set the user's education level */
-FOUNDATION_EXPORT NSString *const ADC_SET_USER_EDUCATION;
-
-/** Set the user's known zip code */
-FOUNDATION_EXPORT NSString *const ADC_SET_USER_ZIPCODE;
-
-
-#pragma mark - User Metadata Values (pre-defined)
 
 /**
  * Use the following pre-defined values to configure user metadata options.
  */
 
 /** User is male */
-FOUNDATION_EXPORT NSString *const ADC_USER_MALE;
+FOUNDATION_EXPORT NSString *const ADCUserMale;
 
 /** User is female */
-FOUNDATION_EXPORT NSString *const ADC_USER_FEMALE;
+FOUNDATION_EXPORT NSString *const ADCUserFemale;
 
 /** User is single */
-FOUNDATION_EXPORT NSString *const ADC_USER_SINGLE;
+FOUNDATION_EXPORT NSString *const ADCUserSingle;
 
 /** User is married */
-FOUNDATION_EXPORT NSString *const ADC_USER_MARRIED;
+FOUNDATION_EXPORT NSString *const ADCUserMarried;
 
 /** User has a basic grade school education and has not attended high school */
-FOUNDATION_EXPORT NSString *const ADC_USER_EDUCATION_GRADE_SCHOOL;
+FOUNDATION_EXPORT NSString *const ADCUserEducationGradeSchool;
 
 /** User has completed at least some high school but has not received a diploma */
-FOUNDATION_EXPORT NSString *const ADC_USER_EDUCATION_SOME_HIGH_SCHOOL;
+FOUNDATION_EXPORT NSString *const ADCUserEducationSomeHighSchool;
 
 /** User has received a high school diploma but has not completed any college */
-FOUNDATION_EXPORT NSString *const ADC_USER_EDUCATION_HIGH_SCHOOL_DIPLOMA;
+FOUNDATION_EXPORT NSString *const ADCUserEducationHighSchoolDiploma;
 
 /** User has completed at least some college but doesn't have a college degree */
-FOUNDATION_EXPORT NSString *const ADC_USER_EDUCATION_SOME_COLLEGE;
+FOUNDATION_EXPORT NSString *const ADCUserEducationSomeCollege;
 
 /** User has been awarded at least 1 associates degree, but doesn't have any higher level degrees */
-FOUNDATION_EXPORT NSString *const ADC_USER_EDUCATION_ASSOCIATES_DEGREE;
+FOUNDATION_EXPORT NSString *const ADCUserEducationAssociatesDegree;
 
 /** User has been awarded at least 1 bachelors degree, but does not have a graduate level degree */
-FOUNDATION_EXPORT NSString *const ADC_USER_EDUCATION_BACHELORS_DEGREE;
+FOUNDATION_EXPORT NSString *const ADCUserEducationBachelorsDegree;
 
 /** User has been awarded at least 1 masters or doctorate level degree */
-FOUNDATION_EXPORT NSString *const ADC_USER_EDUCATION_GRADUATE_DEGREE;
+FOUNDATION_EXPORT NSString *const ADCUserEducationGraduateDegree;
 
 NS_ASSUME_NONNULL_END

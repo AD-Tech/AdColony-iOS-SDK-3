@@ -1,12 +1,4 @@
-/**
- *  AdColonyAppOptions.h
- *  AdColonyAppOptions
- *
- *  Created by Owain Moss on 4/7/16.
- */
-
 #import "AdColonyOptions.h"
-
 #import <Foundation/Foundation.h>
 
 @class AdColonyUserMetadata;
@@ -14,27 +6,30 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /**
- @discussion AdColonyAppOptions objects are used to set configurable aspects of SDK state and behavior, such as a custom user identifier.
- The common usage scenario is to instantiate and configure one of these objects and then pass it to `[AdColony configureWithAppID:zoneIDs:options:completion:]`.
- You can use one of the constants below to configure a specific option.
- Note that you can also reset the current options object the SDK is using by passing an updated object to `setAppOptions:`.
+ AdColonyAppOptions objects are used to set configurable aspects of SDK state and behavior, such as a custom user identifier.
+ The common usage scenario is to instantiate and configure one of these objects and then pass it to `configureWithAppID:zoneIDs:options:completion:`.
+ Set the properties below to configure a pre-defined option. Note that you can also pass arbitrary options using the AdColonyOptions API.
+ Also note that you can also reset the current options object the SDK is using by passing an updated object to `setAppOptions:`.
+ @see AdColonyOptions
  @see [AdColony setAppOptions:]
  */
 @interface AdColonyAppOptions : AdColonyOptions
-@end
 
-#pragma mark - AdColony App Option Keys
+/** @name Properties */
 
 /**
- Enabled by default.
- Set before calling `configureWithAppID:zoneIDs:options:completion:` with a corresponding value of `@(NO)` to disable AdColony logging.
+ @abstract Disables AdColony logging.
+ @discussion AdColony logging is enabled by default.
+ Set this property before calling `configureWithAppID:zoneIDs:options:completion:` with a corresponding value of `YES` to disable AdColony logging.
  */
-FOUNDATION_EXPORT NSString* const ADC_OPTION_DISABLE_LOGGING;
+@property (nonatomic) BOOL disableLogging;
 
 /**
- Set a custom identifier for the current user.
+ @abstract Configures a custom user identifier for the current user.
+ @discussion Set this property to configure a custom identifier for the current user.
  Corresponding value must be 128 characters or less.
  */
-FOUNDATION_EXPORT NSString* const ADC_OPTION_USER_ID;
+@property (nonatomic, strong, nullable) NSString *userID;
+@end
 
 NS_ASSUME_NONNULL_END

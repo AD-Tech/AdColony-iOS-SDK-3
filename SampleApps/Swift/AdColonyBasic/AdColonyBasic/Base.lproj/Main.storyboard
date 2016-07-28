@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AdColonyBasic" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="tvs-BL-8Mg">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Text" translatesAutoresizingMaskIntoConstraints="NO" id="Ubh-dV-VYr">
+                                <rect key="frame" x="144" y="240" width="313" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="90a-YR-3f3"/>
+                                    <constraint firstAttribute="width" constant="313" id="bmW-ei-2qn"/>
+                                </constraints>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="183" y="335" width="433" height="128"/>
+                                </variation>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Shf-Fg-CjM">
+                                <rect key="frame" x="170" y="523" width="261" height="50"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Gdr-IW-q5V">
+                                        <rect key="frame" x="8" y="7" width="37" height="37"/>
+                                    </activityIndicatorView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading Video..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="InM-Js-kLQ">
+                                        <rect key="frame" x="53" y="9" width="187" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="ed0-2e-Jba"/>
+                                            <constraint firstAttribute="width" constant="187" id="zhe-pM-UfE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="261" id="0FG-7K-WxD"/>
+                                    <constraint firstItem="Gdr-IW-q5V" firstAttribute="leading" secondItem="Shf-Fg-CjM" secondAttribute="leading" constant="8" id="15b-OA-dVe"/>
+                                    <constraint firstAttribute="height" constant="50" id="Esp-rv-V2k"/>
+                                    <constraint firstItem="InM-Js-kLQ" firstAttribute="leading" secondItem="Gdr-IW-q5V" secondAttribute="trailing" constant="8" id="aFF-Nh-qDG"/>
+                                    <constraint firstItem="Gdr-IW-q5V" firstAttribute="top" secondItem="Shf-Fg-CjM" secondAttribute="top" constant="7" id="bxo-jZ-qWm"/>
+                                    <constraint firstAttribute="bottom" secondItem="InM-Js-kLQ" secondAttribute="bottom" constant="9" id="rDh-6v-uUJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="Gdr-IW-q5V" secondAttribute="bottom" constant="6" id="rY9-iW-Ro0"/>
+                                    <constraint firstItem="InM-Js-kLQ" firstAttribute="top" secondItem="Shf-Fg-CjM" secondAttribute="top" constant="9" id="vXV-Hw-Rfp"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tpi-fO-z70" userLabel="Launch Button">
+                                <rect key="frame" x="201" y="528" width="199" height="45"/>
+                                <accessibility key="accessibilityConfiguration" label="LaunchInterstitial"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="199" id="3Vl-a6-mgM"/>
+                                    <constraint firstAttribute="height" constant="45" id="n49-hz-sm7"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="Button-Press"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="1" y="408" width="398" height="90"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="112" y="333" width="176" height="40"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="201" y="340" width="398" height="90"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="112" y="740" width="176" height="40"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="283" y="618" width="234" height="52"/>
+                                </variation>
+                                <connections>
+                                    <action selector="launchInterstitial:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pwo-CD-3a7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="Ubh-dV-VYr" secondAttribute="centerY" id="3de-xs-sGh"/>
+                            <constraint firstItem="Shf-Fg-CjM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7u9-W0-GC5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tpi-fO-z70" secondAttribute="bottom" constant="27" id="QOk-hb-9mB"/>
+                            <constraint firstAttribute="centerX" secondItem="Ubh-dV-VYr" secondAttribute="centerX" id="dBK-FL-dR8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Shf-Fg-CjM" secondAttribute="bottom" constant="27" id="doF-7d-3Ky"/>
+                            <constraint firstItem="tvs-BL-8Mg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="edO-hI-8CN"/>
+                            <constraint firstItem="tpi-fO-z70" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nfE-RH-TV0"/>
+                            <constraint firstAttribute="trailing" secondItem="tvs-BL-8Mg" secondAttribute="trailing" id="rOg-Ny-hgu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tvs-BL-8Mg" secondAttribute="bottom" id="t3J-Wq-cSh"/>
+                            <constraint firstItem="tvs-BL-8Mg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tbU-Bk-EYW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="launchButton" destination="tpi-fO-z70" id="mDp-we-uny"/>
+                        <outlet property="loadingLabel" destination="InM-Js-kLQ" id="t0g-eq-nX2"/>
+                        <outlet property="spinner" destination="Gdr-IW-q5V" id="UpX-Kg-kTG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4834" y="-5950"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="1024" height="1024"/>
+        <image name="Button" width="398" height="90"/>
+        <image name="Button-Press" width="398" height="90"/>
+        <image name="Text" width="572" height="166"/>
+    </resources>
+</document>

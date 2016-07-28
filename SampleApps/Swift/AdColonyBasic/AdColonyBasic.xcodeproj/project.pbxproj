@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17E727D21B1CDD4400143D53 /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E727D11B1CDD4400143D53 /* AdColony.framework */; };
+		581A657A1D46D98F0056EA3D /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 581A65791D46D98F0056EA3D /* libz.1.2.5.tbd */; };
+		9F874CA61B95095000B9F8D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F874CA41B95095000B9F8D5 /* LaunchScreen.storyboard */; };
+		9FE091261A65B4CB001AA326 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE091251A65B4CB001AA326 /* AppDelegate.swift */; };
+		9FE091281A65B4CB001AA326 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE091271A65B4CB001AA326 /* ViewController.swift */; };
+		9FE0912B1A65B4CB001AA326 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FE091291A65B4CB001AA326 /* Main.storyboard */; };
+		9FE0912D1A65B4CB001AA326 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FE0912C1A65B4CB001AA326 /* Images.xcassets */; };
+		9FE091581A65B546001AA326 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE091481A65B546001AA326 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9FE091591A65B546001AA326 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE091491A65B546001AA326 /* AudioToolbox.framework */; };
+		9FE0915A1A65B546001AA326 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE0914A1A65B546001AA326 /* AVFoundation.framework */; };
+		9FE0915B1A65B546001AA326 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE0914B1A65B546001AA326 /* CoreGraphics.framework */; };
+		9FE0915C1A65B546001AA326 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE0914C1A65B546001AA326 /* CoreMedia.framework */; };
+		9FE0915D1A65B546001AA326 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE0914D1A65B546001AA326 /* CoreTelephony.framework */; };
+		9FE0915E1A65B546001AA326 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE0914E1A65B546001AA326 /* EventKit.framework */; };
+		9FE0915F1A65B546001AA326 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE0914F1A65B546001AA326 /* EventKitUI.framework */; };
+		9FE091611A65B546001AA326 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE091511A65B546001AA326 /* MediaPlayer.framework */; };
+		9FE091621A65B546001AA326 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE091521A65B546001AA326 /* MessageUI.framework */; };
+		9FE091631A65B546001AA326 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE091531A65B546001AA326 /* QuartzCore.framework */; };
+		9FE091641A65B546001AA326 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE091541A65B546001AA326 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9FE091651A65B546001AA326 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE091551A65B546001AA326 /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9FE091661A65B546001AA326 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE091561A65B546001AA326 /* SystemConfiguration.framework */; };
+		9FE091671A65B546001AA326 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE091571A65B546001AA326 /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4026233F1B4C74AD00FE2937 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FE091181A65B4CB001AA326 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FE0911F1A65B4CB001AA326;
+			remoteInfo = AdColonyBasic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17E727D11B1CDD4400143D53 /* AdColony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdColony.framework; path = ../../../../AdColony.framework; sourceTree = "<group>"; };
+		581A65791D46D98F0056EA3D /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		9F874CA51B95095000B9F8D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = AdColonyBasic/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9FE091201A65B4CB001AA326 /* AdColonyBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdColonyBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FE091241A65B4CB001AA326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FE091251A65B4CB001AA326 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9FE091271A65B4CB001AA326 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9FE0912A1A65B4CB001AA326 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9FE0912C1A65B4CB001AA326 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9FE091481A65B546001AA326 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		9FE091491A65B546001AA326 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9FE0914A1A65B546001AA326 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9FE0914B1A65B546001AA326 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9FE0914C1A65B546001AA326 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		9FE0914D1A65B546001AA326 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		9FE0914E1A65B546001AA326 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		9FE0914F1A65B546001AA326 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		9FE091511A65B546001AA326 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		9FE091521A65B546001AA326 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		9FE091531A65B546001AA326 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9FE091541A65B546001AA326 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		9FE091551A65B546001AA326 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		9FE091561A65B546001AA326 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9FE091571A65B546001AA326 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		9FE091681A65B57E001AA326 /* AdColonyBasic-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AdColonyBasic-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		402623371B4C74AD00FE2937 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FE0911D1A65B4CB001AA326 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FE091581A65B546001AA326 /* AdSupport.framework in Frameworks */,
+				9FE091591A65B546001AA326 /* AudioToolbox.framework in Frameworks */,
+				9FE0915A1A65B546001AA326 /* AVFoundation.framework in Frameworks */,
+				9FE0915B1A65B546001AA326 /* CoreGraphics.framework in Frameworks */,
+				9FE0915C1A65B546001AA326 /* CoreMedia.framework in Frameworks */,
+				17E727D21B1CDD4400143D53 /* AdColony.framework in Frameworks */,
+				9FE0915D1A65B546001AA326 /* CoreTelephony.framework in Frameworks */,
+				9FE0915E1A65B546001AA326 /* EventKit.framework in Frameworks */,
+				581A657A1D46D98F0056EA3D /* libz.1.2.5.tbd in Frameworks */,
+				9FE0915F1A65B546001AA326 /* EventKitUI.framework in Frameworks */,
+				9FE091611A65B546001AA326 /* MediaPlayer.framework in Frameworks */,
+				9FE091621A65B546001AA326 /* MessageUI.framework in Frameworks */,
+				9FE091631A65B546001AA326 /* QuartzCore.framework in Frameworks */,
+				9FE091641A65B546001AA326 /* Social.framework in Frameworks */,
+				9FE091651A65B546001AA326 /* StoreKit.framework in Frameworks */,
+				9FE091661A65B546001AA326 /* SystemConfiguration.framework in Frameworks */,
+				9FE091671A65B546001AA326 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9FE091171A65B4CB001AA326 = {
+			isa = PBXGroup;
+			children = (
+				9FE091221A65B4CB001AA326 /* AdColonyBasic */,
+				9FE091211A65B4CB001AA326 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9FE091211A65B4CB001AA326 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FE091201A65B4CB001AA326 /* AdColonyBasic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FE091221A65B4CB001AA326 /* AdColonyBasic */ = {
+			isa = PBXGroup;
+			children = (
+				9FE091251A65B4CB001AA326 /* AppDelegate.swift */,
+				9FE091271A65B4CB001AA326 /* ViewController.swift */,
+				9FE091291A65B4CB001AA326 /* Main.storyboard */,
+				9F874CA41B95095000B9F8D5 /* LaunchScreen.storyboard */,
+				9FE0912C1A65B4CB001AA326 /* Images.xcassets */,
+				9FE091451A65B4F3001AA326 /* Frameworks */,
+				9FE091231A65B4CB001AA326 /* Supporting Files */,
+			);
+			path = AdColonyBasic;
+			sourceTree = "<group>";
+		};
+		9FE091231A65B4CB001AA326 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9FE091681A65B57E001AA326 /* AdColonyBasic-Bridging-Header.h */,
+				9FE091241A65B4CB001AA326 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9FE091451A65B4F3001AA326 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17E727D11B1CDD4400143D53 /* AdColony.framework */,
+				9FE091481A65B546001AA326 /* AdSupport.framework */,
+				9FE091491A65B546001AA326 /* AudioToolbox.framework */,
+				9FE0914A1A65B546001AA326 /* AVFoundation.framework */,
+				9FE0914B1A65B546001AA326 /* CoreGraphics.framework */,
+				9FE0914C1A65B546001AA326 /* CoreMedia.framework */,
+				9FE0914D1A65B546001AA326 /* CoreTelephony.framework */,
+				9FE0914E1A65B546001AA326 /* EventKit.framework */,
+				9FE0914F1A65B546001AA326 /* EventKitUI.framework */,
+				9FE091511A65B546001AA326 /* MediaPlayer.framework */,
+				9FE091521A65B546001AA326 /* MessageUI.framework */,
+				9FE091531A65B546001AA326 /* QuartzCore.framework */,
+				9FE091541A65B546001AA326 /* Social.framework */,
+				9FE091551A65B546001AA326 /* StoreKit.framework */,
+				9FE091561A65B546001AA326 /* SystemConfiguration.framework */,
+				9FE091571A65B546001AA326 /* WebKit.framework */,
+				581A65791D46D98F0056EA3D /* libz.1.2.5.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		402623391B4C74AD00FE2937 /* AdColonyBasic UI Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 402623411B4C74AD00FE2937 /* Build configuration list for PBXNativeTarget "AdColonyBasic UI Tests" */;
+			buildPhases = (
+				402623361B4C74AD00FE2937 /* Sources */,
+				402623371B4C74AD00FE2937 /* Frameworks */,
+				402623381B4C74AD00FE2937 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				402623401B4C74AD00FE2937 /* PBXTargetDependency */,
+			);
+			name = "AdColonyBasic UI Tests";
+			productName = "AdColonyBasic UI Tests";
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		9FE0911F1A65B4CB001AA326 /* AdColonyBasic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FE0913F1A65B4CB001AA326 /* Build configuration list for PBXNativeTarget "AdColonyBasic" */;
+			buildPhases = (
+				9FE0911C1A65B4CB001AA326 /* Sources */,
+				9FE0911D1A65B4CB001AA326 /* Frameworks */,
+				9FE0911E1A65B4CB001AA326 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdColonyBasic;
+			productName = AdColonyBasic;
+			productReference = 9FE091201A65B4CB001AA326 /* AdColonyBasic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FE091181A65B4CB001AA326 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = AdColony;
+				TargetAttributes = {
+					402623391B4C74AD00FE2937 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 9FE0911F1A65B4CB001AA326;
+					};
+					9FE0911F1A65B4CB001AA326 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 9FE0911B1A65B4CB001AA326 /* Build configuration list for PBXProject "AdColonyBasic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9FE091171A65B4CB001AA326;
+			productRefGroup = 9FE091211A65B4CB001AA326 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FE0911F1A65B4CB001AA326 /* AdColonyBasic */,
+				402623391B4C74AD00FE2937 /* AdColonyBasic UI Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		402623381B4C74AD00FE2937 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FE0911E1A65B4CB001AA326 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F874CA61B95095000B9F8D5 /* LaunchScreen.storyboard in Resources */,
+				9FE0912B1A65B4CB001AA326 /* Main.storyboard in Resources */,
+				9FE0912D1A65B4CB001AA326 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		402623361B4C74AD00FE2937 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FE0911C1A65B4CB001AA326 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FE091281A65B4CB001AA326 /* ViewController.swift in Sources */,
+				9FE091261A65B4CB001AA326 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		402623401B4C74AD00FE2937 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FE0911F1A65B4CB001AA326 /* AdColonyBasic */;
+			targetProxy = 4026233F1B4C74AD00FE2937 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9F874CA41B95095000B9F8D5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F874CA51B95095000B9F8D5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		9FE091291A65B4CB001AA326 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FE0912A1A65B4CB001AA326 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		402623421B4C74AD00FE2937 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "AdColonyBasic UI Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adcolony.AdColonyBasic-UI-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TEST_TARGET_NAME = AdColonyBasic;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		402623431B4C74AD00FE2937 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "AdColonyBasic UI Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adcolony.AdColonyBasic-UI-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TEST_TARGET_NAME = AdColonyBasic;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		9FE0913D1A65B4CB001AA326 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-fobjc-arc",
+				);
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AdColonyBasic/AdColonyBasic-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9FE0913E1A65B4CB001AA326 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-fobjc-arc",
+				);
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AdColonyBasic/AdColonyBasic-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9FE091401A65B4CB001AA326 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../../..",
+				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				INFOPLIST_FILE = AdColonyBasic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adcolony.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9FE091411A65B4CB001AA326 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../../..",
+				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				INFOPLIST_FILE = AdColonyBasic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adcolony.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		402623411B4C74AD00FE2937 /* Build configuration list for PBXNativeTarget "AdColonyBasic UI Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				402623421B4C74AD00FE2937 /* Debug */,
+				402623431B4C74AD00FE2937 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FE0911B1A65B4CB001AA326 /* Build configuration list for PBXProject "AdColonyBasic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FE0913D1A65B4CB001AA326 /* Debug */,
+				9FE0913E1A65B4CB001AA326 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FE0913F1A65B4CB001AA326 /* Build configuration list for PBXNativeTarget "AdColonyBasic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FE091401A65B4CB001AA326 /* Debug */,
+				9FE091411A65B4CB001AA326 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9FE091181A65B4CB001AA326 /* Project object */;
+}
