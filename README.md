@@ -5,7 +5,7 @@ SDK Version: 3.0.2.5
 
 iOS 10 
 ----------------------------------
-iOS 10 has introduced one change that will affect your integration of our 3.0.2 SDK. Please refer to our [integration instructions](https://github.com/AdColony/AdColony-iOS-SDK/wiki/Project-Setup) for details.
+iOS 10 has introduced one change that will affect your integration of our 3.0.2 SDK. Please refer to our [integration instructions](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki/Project-Setup) for details.
 
 Download:
 ----------------------------------
