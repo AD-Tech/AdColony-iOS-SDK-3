@@ -79,4 +79,11 @@
  */
 - (void)onStatsRefreshed;
 
+/**
+ @abstract VIP information changed callback
+ @discussion This delegate method is called after the user's VIP information has been changed. This can happen at any time and it's up to the client how to propogate the message to its own user interface if appropriate.
+ @note This will be dispatched on the main thread.
+ */
+- (void)onVIPInformationChanged;
+
 @end

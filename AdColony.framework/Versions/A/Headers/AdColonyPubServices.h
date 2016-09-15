@@ -226,7 +226,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param sourceApplication Source application from which URL opened
  @param callback This is called after the URL has been logged and formatted. The callback will have a dictionary containing key/value pairs decoded from the URL query string
  */
-+ (BOOL)handleOpenURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication callback:(void(^)(NSDictionary * _Nullable))callback;
++ (BOOL)handleOpenURL:(NSURL *)url sourceApplication:(nullable NSString *)sourceApplication callback:(void(^)(NSDictionary * _Nullable))callback;
 
 #pragma mark Push Notifications
 /** @name

@@ -6,7 +6,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  AdColonyOptions is a superclass for all types of AdColonyOptions. 
  Note that AdColonyOptions classes should never be instantiated directly.
- Instead, create one of the subclasses and set options on it using its properties string-based constants defined in its header file.
+ Instead, create one of the subclasses and set options on it using its properties as well as the string-based constants defined in its header file.
  */
 @interface AdColonyOptions : NSObject
 

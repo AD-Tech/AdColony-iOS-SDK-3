@@ -14,14 +14,14 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  @abstract Enables reward dialogs to be shown before an advertisement.
  @discussion These popups are disabled by default.
- Set this property before calling `configureWithAppID:zoneIDs:options:completion:` with a corresponding value of `YES` to enable.
+ Set this property with a corresponding value of `YES` to enable.
  */
 @property (nonatomic) BOOL showPrePopup;
 
 /**
  @abstract Enables reward dialogs to be shown after an advertisement.
  @discussion These popups are disabled by default.
- Set this property before calling `configureWithAppID:zoneIDs:options:completion:` with a corresponding value of `YES` to enable.
+ Set this property with a corresponding value of `YES` to enable.
  */
 @property (nonatomic) BOOL showPostPopup;
 @end

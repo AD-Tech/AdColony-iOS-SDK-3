@@ -53,12 +53,14 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  @abstract Sets the block of code to be executed when the interstitial begins playing audio.
  @discussion Note that the associated code block will be dispatched on the main thread.
+ @param audioStart The block of code to be executed.
  */
 - (void)setAudioStart:(nullable void (^)(void))audioStart;
 
 /**
  @abstract Sets the block of code to be executed when the interstitial stops playing audio.
  @discussion Note that the associated code block will be dispatched on the main thread.
+ @param audioStop The block of code to be executed.
  */
 - (void)setAudioStop:(nullable void (^)(void))audioStop;
 

@@ -106,19 +106,12 @@
             ad.finish = ^{
                 NSLog(@"AdColonyNativeAdView finished");
                 
-                //If we have no more native ads ready, just leave the finished one in the feed
-                if ([_ads count] == 0) {
-                    return;
-                }
-                
                 //If the native ad has been expanded to fullscreen, use the close handler instead
                 if (weakAd.opened) {
                     return;
                 }
                 
-                //Try to get an ad that's ready to be viewed and then try to insert it into our feed
-                //*** NOTE: Replacing finished ads with new ones will increase publisher revenue
-                [self replaceCurrentAd:weakAd];
+                [self onAdComplete:weakAd];
             };
             
             //Native video open handler
@@ -129,6 +122,7 @@
             //Native ad close handler
             ad.close = ^{
                 NSLog(@"AdColonyNativeAdView has closed");
+                [self onAdComplete:weakAd];
             };
             
             //Try to insert the new ad view into our feed
@@ -156,6 +150,24 @@
             [self requestAd];
         }
      ];
+}
+
+-(void)onAdComplete:(__weak AdColonyNativeAdView*)ad {
+    //If we have no more native ads ready, just leave the finished one in the feed
+    if ([_ads count] == 0) {
+        return;
+    }
+    
+    //Get the first ready ad and then try to insert it into our feed
+    //*** NOTE: Replacing finished ads with new ones will increase publisher revenue
+    [self updateFeedWithAdView:_ads[0]];
+    
+    //Update the queue of waiting ads
+    [_ads removeObjectAtIndex:0];
+    
+    //Destroy the current ad to free up resources
+    [ad removeFromSuperview];
+    [ad destroy];
 }
 
 #pragma mark - UITableViewDataSource
@@ -230,19 +242,6 @@
 }
 
 #pragma mark - Updating Feed and Data Source
-
-- (void)replaceCurrentAd:(AdColonyNativeAdView *)currentAd {
-    //Try to insert the next ad into our feed
-    AdColonyNativeAdView* newAd = _ads[0];
-    [self updateFeedWithAdView:newAd];
-    
-    //Update the queue of waiting ads
-    [_ads removeObjectAtIndex:0];
-    
-    //Destroy the current ad to free up resources
-    [currentAd removeFromSuperview];
-    [currentAd destroy];
-}
 
 - (BOOL)updateFeedWithAdView:(AdColonyNativeAdView *)adView  {
     NSDictionary *cellConfig = _posts[kAdViewCellIndex];

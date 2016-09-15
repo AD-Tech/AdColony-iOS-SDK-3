@@ -86,6 +86,6 @@
 /**
  @abstract Raw data exposed for developer use for fields not yet strongly typed.
  */
-@property (nonatomic, readonly) NSDictionary *data;
+- (NSDictionary *)getData;
 
 @end

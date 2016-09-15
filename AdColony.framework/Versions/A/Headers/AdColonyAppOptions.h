@@ -1,6 +1,21 @@
 #import "AdColonyOptions.h"
 #import <Foundation/Foundation.h>
 
+/**
+ Enum representing supported ad orientations
+ */
+typedef NS_ENUM(NSInteger, AdColonyOrientation) {
+    
+    /** Portrait and upside down */
+    AdColonyOrientationPortrait = 0,
+    
+    /** Landscape left and landscape right */
+    AdColonyOrientationLandscape,
+    
+    /** All orientations supported */
+    AdColonyOrientationAll
+};
+
 @class AdColonyUserMetadata;
 
 NS_ASSUME_NONNULL_BEGIN
@@ -25,11 +40,19 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) BOOL disableLogging;
 
 /**
- @abstract Configures a custom user identifier for the current user.
+ @abstract Sets a custom identifier for the current user.
  @discussion Set this property to configure a custom identifier for the current user.
  Corresponding value must be 128 characters or less.
  */
 @property (nonatomic, strong, nullable) NSString *userID;
+
+/**
+ @abstract Sets the desired ad orientation.
+ @discussion Set this property to configure the desired orientation for your ads.
+ Note that this value can be overriden through an app-level setting in the AdColony portal.
+ @see ADCOrientation
+ */
+@property (nonatomic) AdColonyOrientation adOrientation;
 @end
 
 NS_ASSUME_NONNULL_END

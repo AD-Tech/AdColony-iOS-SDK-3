@@ -113,6 +113,9 @@
             //Interstitials can expire, so we need to handle that event also
             ad.expire = ^{
                 _ad = nil;
+                
+                [self setLoadingState];
+                [self requestInterstitial];
             };
                                     
             //Store a reference to the returned interstitial object
