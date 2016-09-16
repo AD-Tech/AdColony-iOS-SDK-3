@@ -1,6 +1,6 @@
 AdColony iOS SDK
 ==================================
-Modified: July 28, 2016  
+Modified: September 15, 2016  
 SDK Version: 3.0.3.1
 
 iOS 10 
