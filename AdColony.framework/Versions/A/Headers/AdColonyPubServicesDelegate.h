@@ -11,7 +11,6 @@
 /**
  @abstract Service availability changed callback
  @discussion This is called when the service availability has changed either due to an initialization, network conditions or server status. The developer should listen to this notification to determine visibility of UI elements.
- @code
  
     - (void)onServiceAvailabilityChanged:(AdColonyPubServicesAvailability)availability {
         // Show or hide overlay button based on result...
@@ -24,7 +23,6 @@
         }
     }
 
- @endcode
  @see AdColonyPubServices:shouldShowOverlay
  @param availability current service availability status
  @param error additional information coinciding with availability, could be nil

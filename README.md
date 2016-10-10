@@ -27,6 +27,15 @@ Please feel free to explore the [Compass Platform](https://github.com/AdColony/A
 
 All users should review our [documentation](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki).
 
+Getting Started with AdColony:
+----------------------------------
+Please note that updating from our AdColony 2.x SDK is not a drag and drop update, but rather includes breaking API and process changes. Please review our [documentation](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki) to get a better idea on what changes will be necessary in your app.
+
+3.0.4 Change Log:
+----------------------------------
+* General Availability (GA) release
+* Misc bugfixes
+
 3.0.3 Change Log:
 ----------------------------------
 * Vertical ads 

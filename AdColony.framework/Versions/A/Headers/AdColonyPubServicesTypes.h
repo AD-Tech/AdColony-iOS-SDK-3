@@ -60,17 +60,7 @@ typedef NS_ENUM(NSInteger, AdColonyPubServicesAvailability) {
 };
 
 /**
- Log Level for messages.
- @see AdColonyPubServices:setLogLevel:
- */
-typedef NS_ENUM(NSUInteger, AdColonyPubServicesLogLevel) {
-    AdColonyPubServicesLogLevelError,
-    AdColonyPubServicesLogLevelWarning,
-    AdColonyPubServicesLogLevelNotice
-};
-
-/**
- Allowed types of notifications.
+ @abstract Allowed types of notifications.
  @see AdColonyPubServicesNotificationMask
  @see setNotificationsAllowed:
  */

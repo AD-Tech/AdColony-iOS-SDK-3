@@ -84,8 +84,18 @@
 @property (nonatomic, readonly) CGFloat nextBonusPerProductUnit;
 
 /**
+ @abstract Number of achievements visible within the overlay, completed and uncompleted
+ */
+@property (nonatomic, readonly) NSInteger totalAchievementCount;
+
+/**
+ @abstract Number of pending redemptions available from achievements
+ */
+@property (nonatomic, readonly) NSInteger pendingAchievementRedemptionCount;
+
+/**
  @abstract Raw data exposed for developer use for fields not yet strongly typed.
  */
-- (NSDictionary *)getData;
+@property (nonatomic, readonly) NSDictionary *rawData;
 
 @end

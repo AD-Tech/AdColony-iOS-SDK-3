@@ -25,14 +25,6 @@ NS_ASSUME_NONNULL_BEGIN
 /** @name Initialization & Setup */
 
 /**
- @abstract Allows the developer to set the log level for internal messages.
- The default is AdColonyPubServicesLogLevelWarning.
- @param logLevel Desired log level
- @see AdColonyPubServicesLogLevel
- */
-+ (void)setLogLevel:(AdColonyPubServicesLogLevel)logLevel;
-
-/**
  @abstract Sets which notifications are allowed from the service. 
  @discussion Based on user interaction or server communication, various types of messages may be requested for display. This will control which can appear immediately. A developer might want to disable toast or modal notifications during gameplay and re-enable them after a round completes. It is up to the developer to re-enable notifications when appropriate. The default is AdColonyPubServicesNotificationMaskAll.
  @param allowedNotifications The set of notifications allowed
@@ -55,11 +47,6 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion This will only show the overlay if the service is in the correct application state for displaying a overlay to the user. The call will be ignored in all other cases.
  
  Developers should listen to the onServiceAvailabilityChanged delegate callback and check isServiceAvailable to determine when to show a button for the overlay.
- 
- An additional notification is available for the developers to use to show something has changed within the overlay related to the developer. These include situations such as:
-
- - Changed promotions, either manually or because a new duration has started.
- - Digital items updated or changed.
 
  @see [AdColonyPubServicesDelegate onOverlayVisibilityChanged]
  @see [AdColonyPubServicesDelegate onServiceAvailabilityChanged:error:]
@@ -119,7 +106,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  @abstract Use this method to grant a reward from the given IAP receipt. 
- @discussion This receipt will internally be validated on AdColony Publisher Services backend. If the receipt has already been used or is invalid, no reward will be given. This is useful for bindings like Unity3D where an SKPaymentTransaction * may not be available.
+ @discussion This receipt will internally be validated on AdColony Publisher Services backend. If the receipt has already been used or is invalid, no reward will be given.
  @param productId Product id of the item
  @param base64ReceiptData Base-64 encoded string of the entire receipt data,
  @param transactionId Unique transaction ID of the purchase, contained within SKPaymentTransaction object
@@ -224,9 +211,10 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion This function will track all entries into your application from openURL given your URL scheme. This allows you to execute custom commands interpretted by the developer or internal PubServices commands set from the Developer Portal.
  @param url The full url causing the application to open
  @param sourceApplication Source application from which URL opened
- @param callback This is called after the URL has been logged and formatted. The callback will have a dictionary containing key/value pairs decoded from the URL query string
+ @param callback This is called after the URL has been logged and formatted. The callback will have a dictionary containing key/value pairs decoded from the URL query string and a boolean indicating if URI is an AdColony scheme
+ @return TRUE if URI is an AdColony scheme
  */
-+ (BOOL)handleOpenURL:(NSURL *)url sourceApplication:(nullable NSString *)sourceApplication callback:(void(^)(NSDictionary * _Nullable))callback;
++ (BOOL)handleOpenURL:(NSURL *)url sourceApplication:(nullable NSString *)sourceApplication callback:(void(^)(NSDictionary * _Nullable, BOOL))callback;
 
 #pragma mark Push Notifications
 /** @name
