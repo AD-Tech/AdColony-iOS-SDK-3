@@ -23,7 +23,7 @@ Getting Started with AdColony:
 ----------------------------------
 Our Aurora SDK contains huge leaps forward in our capabilities, with benefits for both publishers and advertisers. We would also like to highlight the addition of AdColony Compass™ to our suite of products. AdColony Compass provides publishers with intuitive marketing tools to maximize the value of users throughout your app economy, like creating rewards, achievements, push notifications and in-app messaging.
 
-Please feel free to explore the [Compass Platform](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki/Compass-Overview). The class references of interest are all prefixed with `AdColonyPubServices`. For more details on how you can take advantage of Compass, please [click here.](https://clients.adcolony.com/compass/info)
+Please feel free to explore the [Compass Platform](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki/Compass-Overview). For more details on how you can take advantage of Compass, please [click here.](https://clients.adcolony.com/compass/info)
 
 All users should review our [documentation](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki).
 
