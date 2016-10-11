@@ -194,7 +194,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         //There are only two cases to consider here:
         // 1. The cell cannot be an ad
         // 2. The cell is an ad and we have an AdColonyNativeAdView
-        if (cellType == Constants.post) {
+        if cellType == Constants.post {
             return self.createStandardCell(indexPath)
         } else {
             let adView = cellConfig[Constants.adView] as! AdColonyNativeAdView
@@ -210,7 +210,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         //There are only two cases to consider here:
         // 1. The cell cannot be an ad
         // 2. The cell is an ad and we have an AdColonyNativeAdView
-        if (cellType == Constants.post) {
+        if cellType == Constants.post {
             return self.getStandardCellHeight(cellConfig)
         } else {
             return Constants.adViewCellHeight
