@@ -25,7 +25,7 @@ Our Aurora SDK contains huge leaps forward in our capabilities, with benefits fo
 
 Please feel free to explore the [Compass Platform](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki/Compass-Overview). For more details on how you can take advantage of Compass, please [click here.](https://clients.adcolony.com/compass/info)
 
-All users should review our [documentation](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki).
+*All* users should review our [documentation](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki).
 
 Getting Started with AdColony:
 ----------------------------------
