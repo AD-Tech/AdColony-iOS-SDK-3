@@ -71,6 +71,20 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)setExpire:(nullable void (^)(void))expire;
 
+/**
+ @abstract Sets the block of code to be executed when an action causes the user to leave the application.
+ @discussion Note that the associated code block will be dispatched on the main thread.
+ @param leftApplication The block of code to be executed.
+ */
+- (void)setLeftApplication:(nullable void (^)(void))leftApplication;
+
+/**
+ @abstract Sets the block of code to be executed when the user taps on the interstitial ad, causing an action to be taken.
+ @discussion Note that the associated code block will be dispatched on the main thread.
+ @param click The block of code to be executed.
+ */
+- (void)setClick:(nullable void (^)(void))click;
+
 
 /** @name Videos For Purchase (V4P) */
 

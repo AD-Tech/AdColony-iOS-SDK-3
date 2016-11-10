@@ -70,6 +70,8 @@
             
             //Once the ad has finished, set the loading state and request a new interstitial
             ad.close = ^{
+                _ad = nil;
+                
                 [self setLoadingState];
                 [self requestInterstitial];
             };

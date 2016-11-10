@@ -115,6 +115,8 @@ class ViewController: UIViewController
             
                 //Once the ad has finished, set the loading state and request a new interstitial
                 newAd.setClose({
+                    self.ad = nil
+                    
                     self.setLoadingState()
                     self.requestInterstitial()
                 })

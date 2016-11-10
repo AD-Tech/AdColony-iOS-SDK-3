@@ -132,6 +132,22 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)sendCustomMessageOfType:(NSString *)type withContent:(nullable NSString *)content reply:(nullable void (^)(_Nullable id reply))reply;
 
+/**
+ @abstract Registers a block of code to be executed when the AdColony SDK sends your app a custom message.
+ @discussion Use this method to receive custom messages of a given type from the AdColony SDK.
+ Note that the associated block of code will be dispatched on the main thread.
+ @param handler The block of code to be executed.
+ @param type The type of messages to register for. Must be 128 characters or less.
+ */
++ (void)registerHandler:(void (^)(NSString *content))handler forCustomMessagesOfType:(NSString *)type;
+
+/**
+ @abstract Unregisters the block-based handler associated with the custom message type.
+ @discussion Use this method to unregister a handler for custom messages of a given type.
+ @param type The custom message type. Must be 128 chars or less.
+ */
++ (void)unregisterHandlerForCustomMessagesOfType:(NSString *)type;
+
 
 /** @name In-app purchase (IAP) Tracking */
 

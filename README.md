@@ -1,7 +1,7 @@
 AdColony iOS SDK
 ==================================
-Modified: October 11, 2016  
-SDK Version: 3.0.4.1
+Modified: November 9, 2016  
+SDK Version: 3.0.5
 
 iOS 10 
 ----------------------------------
@@ -27,6 +27,12 @@ Please feel free to explore the [Compass Platform](https://github.com/AdColony/A
 
 *All* users should review our [documentation](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki).
 
+
+3.0.5 Change Log:
+----------------------------------
+* Click event handler in AdColonyInterstitial
+* User left application handler in AdColonyInterstitial
+* Misc bugfixes
 
 3.0.4 Change Log:
 ----------------------------------
@@ -57,9 +63,9 @@ Please feel free to explore the [Compass Platform](https://github.com/AdColony/A
 * Asynchronous API for making ad requests
 * Delegate protocols replaced with block-based handlers
 * Replaced usage of NSURLConnection with NSURLSession
-* Optimized ad-server communication protocols
+* Optimized ad server communication protocols
 * Video-playing APIs now take a reference to presenting view controller
-* New APIs for option-setting and configuring user metadata
+* New APIs for option setting and configuring user metadata
 
 Legal Requirements:
 ----------------------------------
