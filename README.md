@@ -3,7 +3,7 @@ AdColony iOS SDK
 Modified: November 9, 2016  
 SDK Version: 3.0.5
 
-iOS 10 
+iOS 10
 ----------------------------------
 iOS 10 has introduced one change that will affect your integration of our SDK. Please refer to our [integration instructions](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki/Xcode-Project-Setup) for details.
 
@@ -23,7 +23,12 @@ Getting Started with AdColony:
 ----------------------------------
 Our Aurora SDK contains huge leaps forward in our capabilities, with benefits for both publishers and advertisers. We would also like to highlight the addition of AdColony Compass™ to our suite of products. AdColony Compass provides publishers with intuitive marketing tools to maximize the value of users throughout your app economy, like creating rewards, achievements, push notifications and in-app messaging. Please note that updating from our AdColony 2.x SDK is not a drag and drop update, but rather includes breaking API and process changes. Please review our [documentation](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki) to get a better idea on what changes will be necessary in your app.
 
-Please feel free to explore the [Compass Platform](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki/Compass-Overview). For more details on how you can take advantage of Compass, please [click here.](https://clients.adcolony.com/compass/info)
+AdColony Compass™ provides the tools to increase user engagement through targeted user communications, achievements and rewards.
+
+Combined with AdColony’s award-winning Instant-Play™ HD video ads, Compass™ features can also stimulate monetization within apps. Compass™ tools allow publishers to incentivize desired user behaviors and improve KPI's for apps without heavy development work or altering carefully balanced in-app economies.
+
+To start using Compass™ today, follow this [link.](https://clients.adcolony.com/compass/info)
+Questions?  E-mail us at support@adcolony.com
 
 *All* users should review our [documentation](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki).
 
@@ -41,16 +46,16 @@ Please feel free to explore the [Compass Platform](https://github.com/AdColony/A
 
 3.0.3 Change Log:
 ----------------------------------
-* Vertical ads 
+* Vertical ads
 * Flexible ad-orientation controls
 * Updated Swift syntax in sample apps (requires Xcode 8)
-* Increased deployment target to iOS 6.0 
+* Increased deployment target to iOS 6.0
 * Misc bugfixes
 
 3.0.2 Change Log:
 ----------------------------------
 * AdColony Compass™
-* Native Ad Unit (InstantFeed™) 
+* Native Ad Unit (InstantFeed™)
 * In-app Purchase Promo (IAPP) ads
 * Custom Messaging
 * InstantFeed demo app
