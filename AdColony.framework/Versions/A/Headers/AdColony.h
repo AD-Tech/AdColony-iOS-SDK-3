@@ -22,6 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
  AdColony does not begin preparing ads for display or performing reporting until after it is configured by your app.
  The required appID and zoneIDs parameters for this method can be created and retrieved at the [Control Panel](http://clients.adcolony.com).
  If either of these are `nil`, app will be unable to play ads and AdColony will only provide limited reporting and install-tracking functionality.
+ Please note the completion handler. You should not start requesting ads until it has fired.
+ If there is a configuration error, the set of zones passed to the completion handler will be nil.
  @param appID The AdColony app ID for your app.
  @param zoneIDs An array of at least one AdColony zone ID string.
  @param options (optional) Configuration options for your app.
@@ -131,22 +133,6 @@ NS_ASSUME_NONNULL_BEGIN
  @param reply A block of code to be executed when a reply is sent to the custom message.
  */
 + (void)sendCustomMessageOfType:(NSString *)type withContent:(nullable NSString *)content reply:(nullable void (^)(_Nullable id reply))reply;
-
-/**
- @abstract Registers a block of code to be executed when the AdColony SDK sends your app a custom message.
- @discussion Use this method to receive custom messages of a given type from the AdColony SDK.
- Note that the associated block of code will be dispatched on the main thread.
- @param handler The block of code to be executed.
- @param type The type of messages to register for. Must be 128 characters or less.
- */
-+ (void)registerHandler:(void (^)(NSString *content))handler forCustomMessagesOfType:(NSString *)type;
-
-/**
- @abstract Unregisters the block-based handler associated with the custom message type.
- @discussion Use this method to unregister a handler for custom messages of a given type.
- @param type The custom message type. Must be 128 chars or less.
- */
-+ (void)unregisterHandlerForCustomMessagesOfType:(NSString *)type;
 
 
 /** @name In-app purchase (IAP) Tracking */

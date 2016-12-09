@@ -1,7 +1,7 @@
 AdColony iOS SDK
 ==================================
-Modified: November 9, 2016  
-SDK Version: 3.0.5
+Modified: December 9, 2016  
+SDK Version: 3.0.6
 
 iOS 10
 ----------------------------------
@@ -32,11 +32,16 @@ Questions?  E-mail us at support@adcolony.com
 
 *All* users should review our [documentation](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki).
 
+3.0.6 Change Log:
+----------------------------------
+* Reduced performance impact of JSON operations
+* Reduced energy impact from internal update loop
+* Misc bugfixes
 
 3.0.5 Change Log:
 ----------------------------------
 * Click event handler in AdColonyInterstitial
-* User left application handler in AdColonyInterstitial
+* User-left-application handler in AdColonyInterstitial
 * Misc bugfixes
 
 3.0.4 Change Log:

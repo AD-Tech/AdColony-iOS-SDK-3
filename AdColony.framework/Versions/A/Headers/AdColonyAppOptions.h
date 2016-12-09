@@ -1,20 +1,6 @@
+#import "AdColonyTypes.h"
 #import "AdColonyOptions.h"
 #import <Foundation/Foundation.h>
-
-/**
- Enum representing supported ad orientations
- */
-typedef NS_ENUM(NSInteger, AdColonyOrientation) {
-    
-    /** Portrait and upside down */
-    AdColonyOrientationPortrait = 0,
-    
-    /** Landscape left and landscape right */
-    AdColonyOrientationLandscape,
-    
-    /** All orientations supported */
-    AdColonyOrientationAll
-};
 
 @class AdColonyUserMetadata;
 
@@ -49,7 +35,6 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  @abstract Sets the desired ad orientation.
  @discussion Set this property to configure the desired orientation for your ads.
- Note that this value can be overriden through an app-level setting in the AdColony portal.
  @see ADCOrientation
  */
 @property (nonatomic) AdColonyOrientation adOrientation;

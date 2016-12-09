@@ -1,24 +1,10 @@
+#import "AdColonyTypes.h"
 #import <Foundation/Foundation.h>
-
-/**
- * Zone types
- */
-typedef NS_ENUM(NSUInteger, AdColonyZoneType) {
-    
-    /** Interstitial zone type */
-    AdColonyZoneTypeInterstitial = 0,
-    
-    /** Banner zone type */
-    AdColonyZoneTypeBanner,
-    
-    /** Native zone type */
-    AdColonyZoneTypeNative
-};
 
 NS_ASSUME_NONNULL_BEGIN
 
 /**
- AdColonyZone objects aggregate informative data about a unique AdColony zone such as its unique identifier, its ADCOLONY_ZONE_TYPE, etc.
+ AdColonyZone objects aggregate informative data about an AdColony zone such as its unique identifier, its `ADCOLONY_ZONE_TYPE`, etc.
  AdColonyZones also provide a block-based handler for zone-level reward events.
  Note that you should never instantiate one of these objects directly. You only need to use them when they are passed to you.
  */

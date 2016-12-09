@@ -3,6 +3,44 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /**
+ * Use the following pre-defined values to configure user metadata options.
+ */
+
+/** User is male */
+FOUNDATION_EXPORT NSString *const ADCUserMale;
+
+/** User is female */
+FOUNDATION_EXPORT NSString *const ADCUserFemale;
+
+/** User is single */
+FOUNDATION_EXPORT NSString *const ADCUserSingle;
+
+/** User is married */
+FOUNDATION_EXPORT NSString *const ADCUserMarried;
+
+/** User has a basic grade school education and has not attended high school */
+FOUNDATION_EXPORT NSString *const ADCUserEducationGradeSchool;
+
+/** User has completed at least some high school but has not received a diploma */
+FOUNDATION_EXPORT NSString *const ADCUserEducationSomeHighSchool;
+
+/** User has received a high school diploma but has not completed any college */
+FOUNDATION_EXPORT NSString *const ADCUserEducationHighSchoolDiploma;
+
+/** User has completed at least some college but doesn't have a college degree */
+FOUNDATION_EXPORT NSString *const ADCUserEducationSomeCollege;
+
+/** User has been awarded at least 1 associates degree, but doesn't have any higher level degrees */
+FOUNDATION_EXPORT NSString *const ADCUserEducationAssociatesDegree;
+
+/** User has been awarded at least 1 bachelors degree, but does not have a graduate level degree */
+FOUNDATION_EXPORT NSString *const ADCUserEducationBachelorsDegree;
+
+/** User has been awarded at least 1 masters or doctorate level degree */
+FOUNDATION_EXPORT NSString *const ADCUserEducationGraduateDegree;
+
+
+/**
  AdColonyUserMetadata objects are used to provide AdColony with per-user, non-personally-identifiable information for ad targeting purposes.
  Note that providing non-personally-identifiable information using this API will improve targeting and unlock improved earnings for your app.
  */
@@ -128,43 +166,5 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (nullable NSArray *)getArrayMetadataWithKey:(NSString *)key;
 @end
-
-
-/**
- * Use the following pre-defined values to configure user metadata options.
- */
-
-/** User is male */
-FOUNDATION_EXPORT NSString *const ADCUserMale;
-
-/** User is female */
-FOUNDATION_EXPORT NSString *const ADCUserFemale;
-
-/** User is single */
-FOUNDATION_EXPORT NSString *const ADCUserSingle;
-
-/** User is married */
-FOUNDATION_EXPORT NSString *const ADCUserMarried;
-
-/** User has a basic grade school education and has not attended high school */
-FOUNDATION_EXPORT NSString *const ADCUserEducationGradeSchool;
-
-/** User has completed at least some high school but has not received a diploma */
-FOUNDATION_EXPORT NSString *const ADCUserEducationSomeHighSchool;
-
-/** User has received a high school diploma but has not completed any college */
-FOUNDATION_EXPORT NSString *const ADCUserEducationHighSchoolDiploma;
-
-/** User has completed at least some college but doesn't have a college degree */
-FOUNDATION_EXPORT NSString *const ADCUserEducationSomeCollege;
-
-/** User has been awarded at least 1 associates degree, but doesn't have any higher level degrees */
-FOUNDATION_EXPORT NSString *const ADCUserEducationAssociatesDegree;
-
-/** User has been awarded at least 1 bachelors degree, but does not have a graduate level degree */
-FOUNDATION_EXPORT NSString *const ADCUserEducationBachelorsDegree;
-
-/** User has been awarded at least 1 masters or doctorate level degree */
-FOUNDATION_EXPORT NSString *const ADCUserEducationGraduateDegree;
 
 NS_ASSUME_NONNULL_END
